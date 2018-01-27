@@ -53,16 +53,25 @@
 		   
 .md-form label{		   color: rgb(255, 255, 255);}
 body{
-background:url(img/sun.jpg);
+	background-image: url("img/img9.jpg");
 background-size:cover;
 background-repeat:no-repeat;
 }
+#b1 { background: url("img/sun.jpg"); }
+#b2 { background: url("img/img12.jpg"); }
+#b3 { background: url("img/img4.jpg"); }
+#b4 { background: url("img/img13.jpg"); }
+#b5 { background: url("img/img10.jpg"); }
+#b6 { background: url("img/img7.jpg"); }
+#b7 { background: url("img/img8.jpg"); }
+
+
 
 	</style>
 
 </head>
 
-<body background="">
+<body >
 
 	<main>
 		<!--Main layout-->
@@ -137,14 +146,23 @@ background-repeat:no-repeat;
 
 	<script>
 		new WOW().init();
-		$(function(){
-			$('.fadein img:gt(0)').hide();
-			setInterval(function(){
-				$('.fadein :first-child').fadeOut()
-				.next('img').fadeIn()
-				.end().appendTo('.fadein');}, 
-				3000);
-		});
+
+	function run(interval, frames) {
+    var int = 1;
+    
+    function func() {
+        document.body.id = "b"+int;
+        
+        int++;
+        if(int === frames) { int = 1; }
+    }
+    
+    var swap = window.setInterval(func, interval);
+
+}
+
+run(5000, 7); //milliseconds, frames
+
 	</script>
 
 </body>
