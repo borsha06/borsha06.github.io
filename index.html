@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<title>Material Design Bootstrap</title>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
+
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Template styles -->
+	<style rel="stylesheet">
+	/* TEMPLATE STYLES */
+
+	main {
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+	}
+
+	.widget-wrapper {
+		padding-bottom: 2rem;
+		border-bottom: 1px solid #e0e0e0;
+		margin-bottom: 2rem;
+	}
+
+	.card {
+		font-weight: 400;
+		background-color: initial;
+	}
+	.form-elegant .z-depth-1a {
+		-webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+		box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); }
+
+		.form-elegant .z-depth-1-half,
+		.form-elegant .btn:hover {
+			-webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+			box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }
+		}
+		.fadein { position:relative; width:500px; height:332px; }
+		.fadein img { position:absolute; left:0; top:0;    width: 100%; }
+		   
+.md-form label{		   color: rgb(255, 255, 255);}
+body{
+background:url(img/sun.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+	</style>
+
+</head>
+
+<body background="">
+
+	<main>
+		<!--Main layout-->
+		<div class="container">
+			 
+	
+				<div class="card">
+					<div class="card-body">
+<div class="widget-wrapper wow fadeIn" data-wow-delay="0.4s">
+	 <div class="row d-flex justify-content-center">
+				<h4 class="white-text mb-3 pt-3 font-bold">Sign In</h4>
+				<br>
+			</div>
+		</div>
+						<div class="md-form">
+							<i class="fa fa-user prefix grey-text"></i>
+							<input type="text" id="orangeForm-name" class="form-control">
+							<label for="orangeForm-name">Username / Phone</label>
+						</div>
+						<div class="md-form">
+							<i class="fa fa-lock prefix grey-text"></i>
+							<input type="password" id="orangeForm-pass" class="form-control">
+							<label for="orangeForm-pass">Password</label>
+							<p class="font-small white-text d-flex justify-content-end">Forgot <a href="#" class="white-text ml-1 font-bold"> Password?</a></p>
+						</div>
+
+
+						<!--Grid row-->
+						<div class="row d-flex align-items-center mb-4">
+
+							<!--Grid column-->
+							<div class="col-md-1 col-md-5 d-flex align-items-start">
+								<div class="text-center">
+									<button type="button" class="btn btn-indigo btn-rounded z-depth-1a btn-sm " >Sign in</button>
+
+								</div>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-md-7">
+								<p class="font-small white-text d-flex justify-content-end mt-3">Don't have an account? <a href="signup.html" class="white-text ml-1 font-bold"> Sign up</a></p>
+							</div>
+							<!--Grid column-->
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Archieve -->
+
+			
+			<!--/.Sidebar-->
+		</div>
+	
+	<!--/.Main layout-->
+
+	
+	<!-- SCRIPTS -->
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+	<!-- Bootstrap dropdown -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+
+	<script>
+		new WOW().init();
+		$(function(){
+			$('.fadein img:gt(0)').hide();
+			setInterval(function(){
+				$('.fadein :first-child').fadeOut()
+				.next('img').fadeIn()
+				.end().appendTo('.fadein');}, 
+				3000);
+		});
+	</script>
+
+</body>
+
+</html>
